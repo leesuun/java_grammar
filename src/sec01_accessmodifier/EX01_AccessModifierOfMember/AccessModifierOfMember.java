@@ -17,7 +17,7 @@ public class AccessModifierOfMember {
 
 //		C c = new C();
 //		c.print();
-		
+
 		D d = new D();
 		d.print();
 
