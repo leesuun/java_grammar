@@ -1,7 +1,7 @@
 package sec03_methodoverriding.EX02_MethodOverriding_2;
 
 class Animal {
-	void cry() {
+	public void cry() {
 		System.out.println("µ¿¹°");
 	}
 
@@ -11,7 +11,7 @@ class Animal {
 }
 
 class Bird extends Animal {
-	void cry() {
+	public void cry() {
 		System.out.println("Â±");
 	}
 
@@ -22,7 +22,7 @@ class Bird extends Animal {
 }
 
 class Cat extends Animal {
-	void cry() {
+	public void cry() {
 		System.out.println("¾ß");
 	}
 
@@ -33,7 +33,7 @@ class Cat extends Animal {
 }
 
 class Dog extends Animal {
-	void cry() {
+	public void cry() {
 		System.out.println("¸Û");
 	}
 
