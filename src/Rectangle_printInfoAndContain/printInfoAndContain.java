@@ -16,21 +16,11 @@ class Rectangle {
 
 	void show() {
 		System.out.printf("(%d, %d)에서 크기가 %d * %d인 사각형\n", x, y, width, height);
-
 	}
 
+	//sol2
 	boolean contains(Rectangle r) {
-		final boolean a = (x < r.x && y < r.y);
-		final boolean b = ((x + width) > (r.x + r.width) && (y + height) > (r.y + r.height));
-
-		// isTopLeftOfCurrentWithinBoundsOfR
-		// isBottomRightOfCurrentBeyondBoundsOfR
-		
-		if (a && b) {
-			return true;
-		}
-
-		return false;
+		return (x < r.x && y < r.y) && ((x + width) > (r.x + r.width) && (y + height) > (r.y + r.height));
 	}
 
 }
@@ -45,6 +35,7 @@ public class printInfoAndContain {
 		Rectangle t = new Rectangle(1, 1, 10, 10);
 		Rectangle d = new Rectangle(12, 12, 12, 12);
 		Rectangle f = new Rectangle(2, 2, 2, 2);
+		Rectangle g = new Rectangle(1, 1, 1, 1);
 
 		r.show();
 		System.out.println("s의 면적은 " + s.square());
@@ -56,6 +47,8 @@ public class printInfoAndContain {
 			System.out.println("d는 t을 포함합니다.");
 		if (t.contains(f))
 			System.out.println("t는 f을 포함합니다.");
+		if (t.contains(g))
+			System.out.println("t는 g을 포함합니다.");
 
 	}
 
