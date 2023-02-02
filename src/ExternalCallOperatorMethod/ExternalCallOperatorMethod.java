@@ -2,6 +2,7 @@ package ExternalCallOperatorMethod;
 
 import java.util.Scanner;
 
+
 class Operator {
 	int a = 0;
 	int b = 0;
@@ -42,27 +43,27 @@ public class ExternalCallOperatorMethod {
 		int result = 0;
 		Integer number_1, number_2;
 		String oper;
-		
+
 		try {
 			System.out.printf("첫번째 수 입력: ");
-			 number_1 = scanner.nextInt();
+			number_1 = scanner.nextInt();
 		} catch (Exception e) {
 			// TODO: handle exception
 			System.out.println("number_1이 정수형이 아닙니다.");
 			return;
 
 		}
-		
+
 		try {
 			System.out.printf("두번째 수 입력: ");
-			 number_2 = scanner.nextInt();
+			number_2 = scanner.nextInt();
 		} catch (Exception e) {
 			// TODO: handle exception
 			System.out.println("number_2이 정수형이 아닙니다.");
 			return;
 
 		}
-		
+
 		try {
 			System.out.printf("연산자 입력: ");
 			oper = scanner.next();
@@ -73,32 +74,31 @@ public class ExternalCallOperatorMethod {
 
 		}
 
-
 		switch (oper) {
 
-			case "+": {
-				result = operator.addition(number_1, number_2);
-				break;
-			}
-			case "-": {
-				result = operator.subtraction(number_1, number_2);
-				break;
-			}
-			case "*": {
-				result = operator.multiplication(number_1, number_2);
-				break;
-			}
-			case "/": {
-				result = operator.division(number_1, number_2);
-				break;
-			}
-			case "%": {
-				result = operator.remainder(number_1, number_2);
-				break;
-			}
-			default:
-				throw new IllegalArgumentException("Unexpected value: " + oper);
-			}
+		case "+": {
+			result = operator.addition(number_1, number_2);
+			break;
+		}
+		case "-": {
+			result = operator.subtraction(number_1, number_2);
+			break;
+		}
+		case "*": {
+			result = operator.multiplication(number_1, number_2);
+			break;
+		}
+		case "/": {
+			result = operator.division(number_1, number_2);
+			break;
+		}
+		case "%": {
+			result = operator.remainder(number_1, number_2);
+			break;
+		}
+		default:
+			throw new IllegalArgumentException("Unexpected value: " + oper);
+		}
 
 		System.out.printf("%d %s %d = %d", number_1, oper, number_2, result);
 
