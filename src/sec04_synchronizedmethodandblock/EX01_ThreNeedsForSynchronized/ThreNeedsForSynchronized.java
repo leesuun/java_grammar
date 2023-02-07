@@ -26,7 +26,8 @@ class MyData {
 	}
 
 	void cde() {
-		synchronized (new Object()) {
+	
+		synchronized (new String[10]) {
 			for (int i = 0; i < 3; i++) {
 				System.out.println(i + "¹øÂ°");
 				try {
