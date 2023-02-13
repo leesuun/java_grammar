@@ -1,8 +1,6 @@
 package sec01_list.EX06_ArrayListVsLinkedList;
 
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.LinkedList;
 import java.util.List;
 
 
