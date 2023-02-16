@@ -18,6 +18,8 @@ public class CreateFileObject {
 		try {
 			InputStream is = new FileInputStream(FilePathAndName);
 			int data;
+			int data2;
+			
 
 			while ((data = is.read()) != -1) {
 
