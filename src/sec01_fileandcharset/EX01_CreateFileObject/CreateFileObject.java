@@ -1,6 +1,5 @@
 package sec01_fileandcharset.EX01_CreateFileObject;
 
-import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -18,10 +17,6 @@ public class CreateFileObject {
 		try {
 			InputStream is = new FileInputStream(FilePathAndName);
 			int data;
-			int data2;
-			
-			
-			
 
 			while ((data = is.read()) != -1) {
 

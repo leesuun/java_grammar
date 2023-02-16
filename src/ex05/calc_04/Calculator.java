@@ -45,7 +45,7 @@ public class Calculator {
 			exp.setValue(number_1, number_2);
 			System.out.println(exp.calculate());
 			if (exp instanceof Div && exp.b == 0) {
-				System.out.println("0으로 나눌 수 없슴다.");
+				System.out.println("0으로 나눌 수 없슴다.");			
 
 			}
 

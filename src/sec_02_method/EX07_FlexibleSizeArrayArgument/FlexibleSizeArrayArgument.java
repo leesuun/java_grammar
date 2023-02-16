@@ -1,7 +1,5 @@
 package sec_02_method.EX07_FlexibleSizeArrayArgument;
 
-import java.util.Arrays;
-
 public class FlexibleSizeArrayArgument {
 
 	public FlexibleSizeArrayArgument() {
