@@ -18,7 +18,7 @@ public class CreateFileObject {
 		try {
 			InputStream is = new FileInputStream(FilePathAndName);
 			int data;
-			int data2;
+			
 			
 			
 
