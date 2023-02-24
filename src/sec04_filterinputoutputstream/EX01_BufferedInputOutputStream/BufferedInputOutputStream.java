@@ -47,8 +47,8 @@ public class BufferedInputOutputStream {
 		}
 		end = System.nanoTime();
 		time2 = end - start;
-		System.out.println("with bufferedXXXstream: " + time2 / 1000000000);
-		System.out.println("ratio of with and without: " + (time1 / time2) / 1000000000);
+		System.out.println("with bufferedXXXstream: " + time2);
+		System.out.println("ratio of with and without: " + (time1 / time2));
 
 	}
 
