@@ -21,6 +21,7 @@ public class array_2d {
 		System.out.printf("row: %d, col: %d\n", row, col);
 		System.out.println("-----------------------");
 		System.out.println("-----------------------");
+		System.out.println("-----------------------");
 
 		int[][] array = new int[row][col];
 		int temp = 0;
