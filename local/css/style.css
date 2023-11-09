@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+body {
+}
+
+.wrapper {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+/* ------------- header region ------------- */
+.header {
+  display: flex;
+  justify-content: right;
+  /* background-color: black; */
+}
+.header .ul {
+  display: flex;
+}
+.header .ul .li {
+  width: 2rem;
+  height: 2rem;
+  text-align: center;
+  padding: 0.2rem;
+}
+
+.header .ul .li a {
+  color: white;
+}
+
+.header .ul .li:nth-child(1) {
+  background-color: blue;
+}
+.header .ul .li:nth-child(2) {
+  background-color: green;
+}
+.header .ul .li:nth-child(3) {
+  background-color: red;
+}
+.header .ul .li:nth-child(4) {
+  background-color: yellowgreen;
+  width: auto;
+}
+
+/* ------------- nav region ------------- */
+.nav {
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.nav img {
+  width: 5rem;
+  height: 2.5rem;
+}
+
+.nav ul {
+  display: flex;
+  margin-left: 10rem;
+  width: 100%;
+  gap: 4rem;
+}
+
+.nav ul li:hover {
+  border-bottom: 2px solid blue;
+}
+
+.nav ul li a {
+  color: black;
+}
+
+/* ------------- main region ------------- */
+.main {
+  padding: 2rem 3.5rem;
+}
+/* banner */
+.banner-container {
+  background-color: tomato;
+  /* img size 변경필요 */
+  height: 30rem;
+}
+/* section main-news */
+.main-article {
+  display: flex;
+  background-color: #f0f2f2;
+}
+.main-article .content {
+  padding: 2rem;
+  width: 100%;
+}
+.main-article .content > * {
+  margin-bottom: 1rem;
+}
+.main-article .content p {
+  font-size: 0.9rem;
+}
+.main-article img {
+  width: 100%;
+  height: 250px;
+}
+.main-article img:hover {
+  transform: scale(1.1);
+}
+
+/* section */
+.section {
+  margin-bottom: 2rem;
+  background-color: aqua;
+  width: 100%;
+  height: 25rem;
+  text-align: center;
+}
+
+/* section sub-news */
+
+/* .sub-section {
+}
+.sub-section-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.sub-section-container article {
+  background-color: #f0f2f2;
+   padding: 5.5rem 7rem; 
+  height: 220px;
+  padding: 1rem;
+  max-width: 300px;
+}
+
+.sub-section-container article div {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+
+.sub-section-container article ul li {
+  overflow: hidden;
+  margin-bottom: 0.7rem;
+} */
+/* section partner */
+/* ------------- footer region ------------- */
+.footer {
+  background-color: #f0f2f2;
+  margin: 0 auto;
+  padding: 5rem;
+  text-align: center;
+}
